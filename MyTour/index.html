@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TOUR</title>
+    <link rel="stylesheet" href="intro.css">
+    
+    <style>
+        body{
+            background-image: url('img/wall1.jpg');
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .main{
+         
+        }
+
+        .left{
+            position: absolute;
+            left: 44px;
+            top: 18px;
+            display: inline-block;
+            /* border: 2px solid grey; */
+            margin: 2px 2px;
+            text-align: center;
+            font-size: 9px;
+            color:#9ed0ff;
+        }
+
+        .left img{
+            width: 78px;
+            height: 51px
+            
+        }
+
+        .mid{
+            display: block;
+            width: 51%;
+            margin: 18px auto;
+            /* border: 2px solid grey; */
+            
+        }
+        .navbar li{
+           
+            font-family: 'Dancing Script', cursive;
+            font-size: 23px;
+            display: inline-block;
+            padding: 0px 14px;
+            margin: 9px 22px
+            
+        }
+        .navbar li a{
+            color: #778da1;
+            text-decoration: none;
+        }
+        .navbar li a:hover {
+            color:#41596f;
+            text-decoration: underline;
+        }
+
+        .navbar li a.active{
+            color: #7665c8;
+            text-decoration: underline;
+        }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 44px;
+            top: 18px;
+            /* border: 2px solid grey; */
+            margin: 2px 2px;
+           }
+
+           .btn{
+            font-family: 'Dancing Script', cursive;
+            font-size: 16px;
+            color: #6a7c8b;
+            background-color: #b8b8b8;
+            padding: 11px 15px;
+            margin: 4px 14px;
+            border: #41596f;
+            border-radius: 16px;
+           }
+
+           .form{
+            /* border:2px solid #7665c8; */
+            padding: 52px 10px ;
+            margin: 10px 121px;
+            width: 41%;
+            display: block;
+            height: 535px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Dancing Script', cursive;
+            color:  #41596f;
+                   }
+            .form-group input{
+                font-size: 16px;
+                text-align: center;
+                color: #41596f;
+                padding: 10px 157px;
+                 margin: 6px 21px;
+                 border: 2px solid#afbf97;
+                 border-radius: 10px;
+            }
+            .btn1{
+            font-family: 'Dancing Script', cursive;
+            color:  #41596f;
+            border: 2px solid#afbf97;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 10px 10px;
+            margin: 13px auto;
+
+
+            }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="img/logo2.jpg" alt="">
+            <div>MYTOUR</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://google.com" class="active" target="_blank" >Home</a> </li>
+                <li><a href="http://google.com" target="_blank">About</a> </li>
+                <li><a href="http://google.com" target="_blank">Service</a> </li>
+                <li><a href="http://google.com" target="_blank">Contact us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> log-in</button>
+            <button class="btn">sign-in</button>
+        </div>
+    </div>
+    <div class="form">
+        <h1>Book your place</h1>
+        <form action="noaction.php">
+        <div class="form-group"> <input type="text" name="" placeholder="Enter the name"></div>
+        <div class="form-group"> <input type="text" name="" placeholder="Enter the place"></div>
+        <div class="form-group"> <input type="date" name="" placeholder="Enter the date"></div>
+        <button class="btn1">Submit</button>
+        
+        </form>
+    </div>
+</body>
+</html>
